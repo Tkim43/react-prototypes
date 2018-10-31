@@ -1,10 +1,10 @@
+// imports the core React code
 import React from 'react';
 import ReactDOM from 'react-dom';
+// import App
+import App from './components/app';
 
-// can we do this??
 ReactDOM.render(
-    <App>
-        <Table></Table>
-    </App>,
+    <App/>,
     document.getElementById('root')
 );
