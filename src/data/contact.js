@@ -1,0 +1,1 @@
+export default [{firstName: 'Tiffany', lastName: 'Kim', phone: '1234', email: 'dog@dog.com'}];
