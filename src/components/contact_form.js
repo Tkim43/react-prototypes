@@ -7,7 +7,9 @@ class Contact_form extends Component{
         this.state ={
             form: {
                 firstName: "",
-                lastName: ""
+                lastName: "",
+                phone: "",
+                email: "",
             }
         };
         this.handleInputChange = this.handleInputChange.bind(this);
@@ -28,10 +30,13 @@ class Contact_form extends Component{
         console.log('handleSubmit called, form values are:', this.state.form);
     }
     render(){
-        const {firstName, lastName} = this.state.form;
+        const {firstName, lastName,email,phone} = this.state.form;
         return(<form onSubmit={this.handleSubmit}>
                <Field name = "firstName" label = "First Name" type ="text" value ={firstName} onChange = {this.handleInputChange}/>
-                <button className="form-group">Add Contact</button>
+               <Field name = "lastName" label = "Last Name" type ="text" value ={lastName} onChange = {this.handleInputChange}/>
+               <Field name = "phone" label = "Phone" type ="text" value ={phone} onChange = {this.handleInputChange}/>
+               <Field name = "email" label = "Email" type ="text" value ={email} onChange = {this.handleInputChange}/>
+               <button className="form-group">Add Contact</button>
                </form>)
     }
 }

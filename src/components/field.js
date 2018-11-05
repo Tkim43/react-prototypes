@@ -6,7 +6,7 @@ export default props =>{
     return(
         <div>
             <label>{props.label}</label>
-            <input {...props}className="form-control"/>
+            <input {...props} className="form-control"/>
         </div>
     )
 }
