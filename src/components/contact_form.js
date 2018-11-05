@@ -28,6 +28,7 @@ class Contact_form extends Component{
         // prevents form from trying to refresh the page
         event.preventDefault();
         console.log('handleSubmit called, form values are:', this.state.form);
+        this.props.add(this.state.form);
     }
     render(){
         const {firstName, lastName,email,phone} = this.state.form;
